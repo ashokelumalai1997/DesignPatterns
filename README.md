@@ -40,4 +40,41 @@ In Software Design, there are problems that everyone faces and find solutions to
 22. **Readers-Writers**: Manages multiple readers and writers accessing a shared resource, ensuring data integrity.
 23. **Semaphore**: Controls access to a resource by limiting the number of threads that can access it simultaneously.
 
-These design patterns cover a wide range of concepts and principles in software design and architecture. Be prepared to explain when and how to use each pattern, as well as the problems they address and the benefits they offer. Demonstrating your ability to apply these patterns effectively will be valuable in your SDE II interview.
+# Dive Into Design Patterns
+
+## Basics of OOP
+
+### Pillars of OOP
+
+- Abstraction (Hiding implementation details)
+- Polymorphism (Same method multiple behaviour - base class and sub-class overriding)
+- Encapsulation (Binds data and methods together, access control via access specifier)
+- Inheritance (inherit parent attributes)
+
+### Relations Between Objects
+
+1. **Association** - When one class uses another. Indicated by arrow. Bi-directional association - arrow at both the ends
+    Arrow -> or <->
+    Link always there
+2. **Dependency** - Weaker association. No permanent link. 
+    Typically, an object accepts another as method parameter, instantiates, or uses another object
+    If changes in one class leads to modifications in another class
+    Dotted arrow ( ----> )
+3. **Composition** - a "whole-part" relationship between 2 objects, one of which is composed of one or more instances of the other
+    Distinction between this and the others - component can only exist as a part of the container.
+    Filled Diamond at one end(container), arrow at the other end(component) **D**->
+    UML notation can represent quantities on both sides of relationships, but its okay to omit if quantities aren't clear
+4. **Aggregation** - a less strict variation of composition, where one object merely contains a reference to another. 
+    The container doesn't control the life cycle of the component. The component can exist without the container and can be linked to several containers at the same time.
+    Drawn similar to composition, but with empty diamond on the arrow's base 
+
+D/B Composition and Association - 
+
+
+Association - parent simply uses child. Permanent link (Teacher-student - strong)
+Dependency - No permanent link but uses (Car - engine -weak)
+Composition - child cannot exist w/o parent. (whole-part/container-component)
+Aggregation - child can exist w/o parent (whole-part/container-component)
+
+
+
