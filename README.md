@@ -288,51 +288,51 @@ Different ways to create objects - where and why we should a particular design p
 1. **Singleton Pattern**: 
     Ensures a class has only one instance and provides a global point of access to it.
 
-Applications:
-> Logging
-> DB connection
-> Configuration
-> Thread Pool manager
-> Caching
+    Applications:
+    > Logging
+    > DB connection
+    > Configuration
+    > Thread Pool manager
+    > Caching
 
-How to Implement?
+    How to Implement?
 
-- Eager initialization (during start of app)
-- Static block initialization (similar to Eager, but have a static block - to do additional operations)
-- Lazy initialization (When required, not early)
-- Thread Safe initialization (Multithreading)
-- Bill Pugh initialization (Solves few memory problems - in legacy code/ older java version)
+   - Eager initialization (during start of app)
+   - Static block initialization (similar to Eager, but have a static block - to do additional operations)
+   - Lazy initialization (When required, not early)
+   - Thread Safe initialization (Multithreading)
+   - Bill Pugh initialization (Solves few memory problems - in legacy code/ older java version)
 
 
 2. **Factory Method Pattern**: 
     Defines an interface for creating objects but allows subclasses to alter the type of objects that will be created.
 
-> Design/Creation logic is hidden from the client
-> Many subclass types, only one instance required
-> Creation is removed from the client
-> Useful for frequent code changes
+    > Design/Creation logic is hidden from the client
+    > Many subclass types, only one instance required
+    > Creation is removed from the client
+    > Useful for frequent code changes
 
-Eg: Database - can be PSQL, MySQL, Oracle, Thirdparty n/w service
+    Eg: Database - can be PSQL, MySQL, Oracle, Thirdparty n/w service
 
-Interface or abstract class that defines common functionality 
-Interface implementations
-Factory class that instantiates the right implementation
+    Interface or abstract class that defines common functionality 
+    Interface implementations
+    Factory class that instantiates the right implementation
 
 
 
 
 3. **Abstract Factory Pattern**: 
     Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
-> One level of abstraction above factory method
-> Provides a way to access functionality without caring about implementation
-> Separation of concerns
-> Allows for testability
+    > One level of abstraction above factory method
+    > Provides a way to access functionality without caring about implementation
+    > Separation of concerns
+    > Allows for testability
 
-E.g: Say we have a display that can get data from multiple data sources - database, user input, network, file storage, 3p app
+    E.g: Say we have a display that can get data from multiple data sources - database, user input, network, file storage, 3p app
 
 
-We can have Datasource as an interface, implemented by Database and Network
-We can have a datasource factory as an interface, implemented by DataBaseFactory, NetworkFactory
+    We can have Datasource as an interface, implemented by Database and Network
+    We can have a datasource factory as an interface, implemented by DataBaseFactory, NetworkFactory
 
 
 
@@ -340,21 +340,21 @@ We can have a datasource factory as an interface, implemented by DataBaseFactory
 4. **Builder Pattern**: 
     Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
 
-> Used when we have multiple parameters to initialize 
-> For many parameters, it's impractical to build all constructors
-    > 5 paramenter combinations - 120 constructors
-> Especially when we have many optional parameters
-> Should be easy to read
+    > Used when we have multiple parameters to initialize 
+    > For many parameters, it's impractical to build all constructors
+        > 5 paramenter combinations - 120 constructors
+    > Especially when we have many optional parameters
+    > Should be easy to read
 
 
 5. **Prototype Pattern**:   
     Creates new objects by copying an existing object, known as the prototype.
 
-> Lets you copy existing objects
-> Without depending on their classes
-> Only reliant on interface - Clonable
-> The copied object must provide the copy functionality
-> Useful in testing and pre-production - 
+    > Lets you copy existing objects
+    > Without depending on their classes
+    > Only reliant on interface - Clonable
+    > The copied object must provide the copy functionality
+    > Useful in testing and pre-production - 
 
 **Structural Design Patterns:**
 
