@@ -337,7 +337,16 @@ We can have a datasource factory as an interface, implemented by DataBaseFactory
 
 
 
-4. **Builder Pattern**: Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
+4. **Builder Pattern**: 
+    Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
+
+> Used when we have multiple parameters to initialize 
+> For many parameters, it's impractical to build all constructors
+    > 5 paramenter combinations - 120 constructors
+> Especially when we have many optional parameters
+> Should be easy to read
+
+
 5. **Prototype Pattern**: Creates new objects by copying an existing object, known as the prototype.
 
 **Structural Design Patterns:**
