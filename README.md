@@ -360,7 +360,15 @@ Different ways to create objects - where and why we should a particular design p
 
 How you structure components in an application and how they interact
 
-6. **Adapter Pattern**: Allows the interface of an existing class to be used as another interface.
+6. **Adapter Pattern**: 
+    Allows the interface of an existing class to be used as another interface.
+
+    > Converts the interface of a class into another interface the client expects
+    > Convert data from one format to another
+    > Used in API wrappers - legacy code integration, multiple DBMS/CSP connectors
+![img.png](Adapter.png)
+
+
 7. **Decorator Pattern**: Adds new responsibilities to objects dynamically without altering their structure.
 8. **Composite Pattern**: Composes objects into tree structures to represent part-whole hierarchies.
 9. **Proxy Pattern**: Provides a surrogate or placeholder for another object to control access to it.
