@@ -393,7 +393,18 @@ How you structure components in an application and how they interact
     > Memory has RAM, ROM
 
 
-9. **Proxy Pattern**: Provides a surrogate or placeholder for another object to control access to it.
+9. **Proxy Pattern**: 
+    Provides a surrogate or placeholder for another object to control access to it.
+   
+    > Provide some functionality before and/or  after calling an object
+    > Same interface as the original object
+    > Similar to facade, except the proxy has the same interface
+    > Similar to decorator, except that the proxy messages the lifecycle of it's object 
+    > Say we have a disk and multiple clients trying to access it
+    > we don't want them to access disk every time
+    > we will introduce a DiskProxy(cache) in between
+
+
 10. **Bridge Pattern**:
     Separates an object's abstraction from its implementation, allowing both to vary independently.
     
