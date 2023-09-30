@@ -441,7 +441,14 @@ How objects behave/communicate
     > The registry can handle multiple events and multiple results
 
 
-13. **Strategy Pattern**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+13. **Strategy Pattern**: 
+    Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+    > When you have multiple ways to perform a function or handle the data
+    > A class behaviour or algorithm can be changed at run time
+    > Objects contain algorithmic logic
+    > Context object that can handle algorithm objects
+    > Useful when we want to be able to add functionality without changing program structure 
+
 14. **Command Pattern**: 
     Encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations.
     
