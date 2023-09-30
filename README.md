@@ -423,7 +423,24 @@ How you structure components in an application and how they interact
 
 How objects behave/communicate
 
-12. **Observer Pattern**: Defines a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically.
+12. **Observer Pattern**: 
+    Defines a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically.
+    
+    > Define a subscription mechanism
+    > Notify multiple objects simultaneously
+    > Event manager that notify subscribers once event is available
+    > We can have multiple events and multiple subscribers
+    > E.g : Say we have some time intensive processing
+    > We have a component that uses our app
+    > This component either can poll periodically or wait for notification
+    > Poll - lot of communication back and forth
+    > What if there are multiple such clients
+    > Huge load
+    > We can have a registry in between
+    > The registry can notify the clients once results are ready
+    > The registry can handle multiple events and multiple results
+
+
 13. **Strategy Pattern**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
 14. **Command Pattern**: Encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations.
 15. **State Pattern**: Allows an object to alter its behavior when its internal state changes.
