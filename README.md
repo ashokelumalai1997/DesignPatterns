@@ -380,16 +380,21 @@ How you structure components in an application and how they interact
     > We split them into multiple interfaces
     > Associate them using a "bridge" reference
 
+11. **Facade Pattern** 
+    Provides asimple interface to a complex functionality
+    
+    > Removes the need for complex memory/object management
+    > Simplifies client implementation
 
 **Behavioral Design Patterns:**
 
 How objects behave/communicate
 
-11. **Observer Pattern**: Defines a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically.
-12. **Strategy Pattern**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
-13. **Command Pattern**: Encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations.
-14. **State Pattern**: Allows an object to alter its behavior when its internal state changes.
-15. **Chain of Responsibility Pattern**: Passes a request along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+12. **Observer Pattern**: Defines a one-to-many dependency between objects, so that when one object changes state, all its dependents are notified and updated automatically.
+13. **Strategy Pattern**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+14. **Command Pattern**: Encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations.
+15. **State Pattern**: Allows an object to alter its behavior when its internal state changes.
+16. **Chain of Responsibility Pattern**: Passes a request along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
 
 **Architectural Design Patterns:**
 
