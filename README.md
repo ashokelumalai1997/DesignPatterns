@@ -372,7 +372,14 @@ How you structure components in an application and how they interact
 7. **Decorator Pattern**: Adds new responsibilities to objects dynamically without altering their structure.
 8. **Composite Pattern**: Composes objects into tree structures to represent part-whole hierarchies.
 9. **Proxy Pattern**: Provides a surrogate or placeholder for another object to control access to it.
-10. **Bridge Pattern**: Separates an object's abstraction from its implementation, allowing both to vary independently.
+10. **Bridge Pattern**:
+    Separates an object's abstraction from its implementation, allowing both to vary independently.
+    
+    > having classes with multiple orthogonal traits exponentially increases the size of the inheritance tree
+    > Convert from inheritance to composition
+    > We split them into multiple interfaces
+    > Associate them using a "bridge" reference
+
 
 **Behavioral Design Patterns:**
 
