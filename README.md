@@ -347,7 +347,14 @@ We can have a datasource factory as an interface, implemented by DataBaseFactory
 > Should be easy to read
 
 
-5. **Prototype Pattern**: Creates new objects by copying an existing object, known as the prototype.
+5. **Prototype Pattern**:   
+    Creates new objects by copying an existing object, known as the prototype.
+
+> Lets you copy existing objects
+> Without depending on their classes
+> Only reliant on interface - Clonable
+> The copied object must provide the copy functionality
+> Useful in testing and pre-production - 
 
 **Structural Design Patterns:**
 
