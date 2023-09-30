@@ -312,7 +312,7 @@ How to Implement?
 > Creation is removed from the client
 > Useful for frequent code changes
 
-Eg: Database - can be PSQL, MySQL, Oracle
+Eg: Database - can be PSQL, MySQL, Oracle, Thirdparty n/w service
 
 Interface or abstract class that defines common functionality 
 Interface implementations
@@ -321,7 +321,22 @@ Factory class that instantiates the right implementation
 
 
 
-3. **Abstract Factory Pattern**: Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+3. **Abstract Factory Pattern**: 
+    Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+> One level of abstraction above factory method
+> Provides a way to access functionality without caring about implementation
+> Separation of concerns
+> Allows for testability
+
+E.g: Say we have a display that can get data from multiple data sources - database, user input, network, file storage, 3p app
+
+
+We can have Datasource as an interface, implemented by Database and Network
+We can have a datasource factory as an interface, implemented by DataBaseFactory, NetworkFactory
+
+
+
+
 4. **Builder Pattern**: Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
 5. **Prototype Pattern**: Creates new objects by copying an existing object, known as the prototype.
 
