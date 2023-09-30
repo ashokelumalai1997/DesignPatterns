@@ -369,7 +369,20 @@ How you structure components in an application and how they interact
 ![img.png](Adapter.png)
 
 
-7. **Decorator Pattern**: Adds new responsibilities to objects dynamically without altering their structure.
+7. **Decorator Pattern**: 
+    Adds new responsibilities to objects dynamically without altering their structure.
+    
+    > Decorator/Wrapper pattern
+    > Attach new behaviour to an object
+    > Without altering existing code
+    > Overriding behaviour
+
+    E.g: Consider a n/w communication system - tcp protocol that contains sendPacket func
+         Say we want to create a new protocol on top of it NetworkComm that contains SendNetworkMsg()
+         And ApiService that has send / retrieveAPI on top of it
+        
+
+
 8. **Composite Pattern**: Composes objects into tree structures to represent part-whole hierarchies.
 9. **Proxy Pattern**: Provides a surrogate or placeholder for another object to control access to it.
 10. **Bridge Pattern**:
