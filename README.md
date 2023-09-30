@@ -383,7 +383,16 @@ How you structure components in an application and how they interact
         
 
 
-8. **Composite Pattern**: Composes objects into tree structures to represent part-whole hierarchies.
+8. **Composite Pattern**: 
+    Composes objects into tree structures to represent part-whole hierarchies.
+    
+    > Composite objects into tree structures
+    > Works when the core functionality can be represented as a tree 
+    > Can manipulate many objects as a single one 
+    > Eg: Computer is made of memory, CPU, HDD
+    > Memory has RAM, ROM
+
+
 9. **Proxy Pattern**: Provides a surrogate or placeholder for another object to control access to it.
 10. **Bridge Pattern**:
     Separates an object's abstraction from its implementation, allowing both to vary independently.
