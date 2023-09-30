@@ -444,7 +444,12 @@ How objects behave/communicate
 13. **Strategy Pattern**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
 14. **Command Pattern**: Encapsulates a request as an object, thereby allowing for parameterization of clients with queues, requests, and operations.
 15. **State Pattern**: Allows an object to alter its behavior when its internal state changes.
-16. **Chain of Responsibility Pattern**: Passes a request along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+16. **Chain of Responsibility Pattern**: 
+    Passes a request along a chain of handlers. Upon receiving a request, each handler decides either to process the request or to pass it to the next handler in the chain.
+    > Define a chain of handlers to process a request
+    > Each handler contains a reference to the next handler
+    > Each handler decides to process the request AND/OR pass it on
+    > Requests can be of different types
 
 **Architectural Design Patterns:**
 
